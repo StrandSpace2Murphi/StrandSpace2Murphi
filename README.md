@@ -32,11 +32,11 @@ Difficulty<br>
 
 Installation<br>
 ---
-In our experiment, AnB2Murphi tool is run on a PC server with macOS Catalina.<br>
+In our experiment, StrandSpace2Murphi tool is run on a PC server with macOS Catalina.<br>
 
 Install AnB2Murphi Environment<br>
 
-AnB2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml libraries to run, which contains:<br>
+StrandSpace2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml libraries to run, which contains:<br>
 - Menhir
 - Murphi 
 - Core
@@ -44,15 +44,15 @@ AnB2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml librarie
 
 Usage
 ---
-To use AnB2Murphi, you need to comfirm the your computer equipped with  Ocaml 4.04.0, Murphi 5.4.9.1, Core, and Menhir in your environment.<br>
+To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  Ocaml 4.04.0, Murphi 5.4.9.1, Core, and Menhir in your environment.<br>
 
 Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
 
-First, execute the following command to use AnB2murphi to compile the A&B specification.
+First, execute the following command to use StrandSpace2Murphi to compile the A&B specification.
 
 $ corebuild getModelString.byte -use-menhir 
 
-Then, AnB2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
+Then, StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
 
 $ ./getModelString.byte ./protocol/NSPK.txt
 
