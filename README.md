@@ -22,6 +22,7 @@ Theory protocol for paper<br>
 >>|Andrew Secure RP|secrecy(Kab)|2.77|54| 
 >>|EAP-TLS authentication|secrecy(prekey)|1.21|1700| 
 >>|EAP-TLS authentication|weakC|51.55|1700| 
+>>|EAP-AKA authentication|secrecy(snn)|1.50|1700| 
 
 Difficulty<br>
 ---
