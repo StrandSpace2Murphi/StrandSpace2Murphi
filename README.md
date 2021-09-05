@@ -34,7 +34,7 @@ Installation<br>
 ---
 In our experiment, StrandSpace2Murphi tool is run on a PC server with macOS Catalina.<br>
 
-Install AnB2Murphi Environment<br>
+Install StrandSpace2Murphi Environment<br>
 
 StrandSpace2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml libraries to run, which contains:<br>
 - Menhir
@@ -68,4 +68,4 @@ $ ./result.o >out1 -ndl -tv
 
 over verification, Result: `Invariant "weakB" failed.`. State Space Explored: `79 states, 110 rules fired in 0.10s.`
 
-This message indicates AnB2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
+This message indicates StrandSpace2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
