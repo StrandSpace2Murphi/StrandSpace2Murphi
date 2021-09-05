@@ -21,7 +21,7 @@ Theory protocol for paper<br>
 >>|Woo and Lam Pi|secrecy(Nb)|0.10|69| 
 >>|Andrew Secure RP|secrecy(Kab)|2.77|54| 
 >>|EAP-TLS authentication|secrecy(prekey)|1.21|1700| 
->>|EAP-TLS authentication|weakC|151.55|1700| 
+>>|EAP-TLS authentication|weakC|51.55|1700| 
 
 Difficulty<br>
 ---
