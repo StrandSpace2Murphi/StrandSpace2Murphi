@@ -1,11 +1,11 @@
-AnB2Murphi
+StrandSpace2Murphi
 ====
-AnB2Murphi is an automatic translator to bridge the gap between high-level Alice&Bob specifications and low-level Murphi model checker, which can help verify the security protocol described in the A&B specifications.<br>
+StrandSpace2Murphi is an automatic translator to bridge the gap between high-level StrandSpace specifications and low-level Murphi model checker, which can help verify the security protocol described in the A&B specifications.<br>
 
 
 Theory protocol for paper<br>
 ---
-*AnB2Murphi: A Translator for Converting Alice\&Bob Specifications to Murphi*<br>
+*A Formally Verified Scheme for SecurityProtocols with the Operational Semantics ofStrand Space*<br>
 >The main security protocols proved are:<br>
 >>|Protocols | Unsatisfied  | Time (sec.) | Memory|
 >>|:---:|:---:|:---:|:---:|
