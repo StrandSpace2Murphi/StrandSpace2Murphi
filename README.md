@@ -27,8 +27,9 @@ Theory protocol for paper<br>
 Transition
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
+>>|Rule | Murphi Rule|
+>>|:---:|:---:|
 >>|Send(i, str, s, M, L)｜rule send <br> channel.empty \Longrightarrow Send(M); i:= i+1; L.add(M);|
->>123
 
 
 Difficulty<br>
