@@ -30,7 +30,7 @@ Transition
 >>|Rule | Murphi Rule|
 >>|:---:|:---:|
 >>|Send(i, str, s, M, L) | rule "send" channel.empty ==> Send(M); i:= i+1; L.add(M);|
->>|Recv(i, str, s, M, L) | rule "recv" !channel.empty ==> Recv(M); i:= i+1; L.remove(M); sub_msg := destruct(M); update(sub_msg);|
+>>|Recv(i, str, s, M, L) | rule "recv" !channel.empty ==> Recv(M); i:= i+1; L.remove(M); msg := destruct(M); update(msg);|
 
 
 Difficulty<br>
