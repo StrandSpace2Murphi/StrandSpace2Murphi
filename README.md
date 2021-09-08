@@ -24,6 +24,10 @@ Theory protocol for paper<br>
 >>|EAP-TLS authentication|weakC|51.55|1700| 
 >>|EAP-AKA authentication|secrecy(snn)|1.50|1700| 
 
+Transition
+---
+*The Transformation from the Operational Semantic to Transition Rules*<br>
+>>|
 Difficulty<br>
 ---
 - There are three agents in Otway-Rees including Alice, Bob and Server. Besides, We implemented a mechanism for forwarding secrecy with the help of `tmp` message. When agent receives oneA message that cannot be decrypted from its own knowledge, it forwards this message tagged as `tmp` to another agent.
@@ -70,5 +74,3 @@ over verification, Result: `Invariant "weakB" failed.`. State Space Explored: `7
 
 This message indicates StrandSpace2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
 
-Transition
----
