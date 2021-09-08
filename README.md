@@ -24,7 +24,7 @@ Theory protocol for paper<br>
 >>|EAP-TLS authentication|weakC|51.55|1700| 
 >>|EAP-AKA authentication|secrecy(snn)|1.50|1700| 
 
-Transition
+Transition Scheme
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
 >>|Rule | Murphi Rule|
