@@ -29,7 +29,7 @@ Transition
 *The Transformation from the Operational Semantic to Transition Rules*<br>
 >>|Rule | Murphi Rule|
 >>|:---:|:---:|
->>|Send(i, str, s, M, L)｜rule send <br> channel.empty \Longrightarrow Send(M); i:= i+1; L.add(M);|
+>>|Send(i, str, s, M, L)｜rule send channel.empty \Longrightarrow Send(M); i:= i+1; L.add(M);|
 
 
 Difficulty<br>
