@@ -28,6 +28,8 @@ Transition
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
 >>|
+
+
 Difficulty<br>
 ---
 - There are three agents in Otway-Rees including Alice, Bob and Server. Besides, We implemented a mechanism for forwarding secrecy with the help of `tmp` message. When agent receives oneA message that cannot be decrypted from its own knowledge, it forwards this message tagged as `tmp` to another agent.
