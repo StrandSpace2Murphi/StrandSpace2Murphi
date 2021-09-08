@@ -28,7 +28,7 @@ Transition
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
 >>|Rule | Murphi Rule|
->>|:---:|:---:|
+>>|:---:|:---|
 >>|Send(i, str, s, M, L) | rule "send" channel.empty ==> Send(M); i := i+1; L.add(M);|
 >>|Recv(i, str, s, M, L) | rule "recv" !channel.empty ==> Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
 >>|Emit(i, str, s, M, L) | rule "emit" channel.empty & SpyKnow(M) ==> Emit(M); L.add(M)|
