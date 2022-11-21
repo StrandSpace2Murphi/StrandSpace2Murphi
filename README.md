@@ -50,10 +50,10 @@ Theory protocol for paper<br>
         <td rowspan="2" align="center">EAP-TLS authentication</td><td align="center">secrecy(prekey)</td><td align="center">1.21</td><td rowspan="2" align="center">3018 </td>
     </tr>
     <tr>
-        <td align="center">weakC</td><td>51.55</td>
+        <td align="center">weakC</td><td align="center">51.55</td>
     </tr>
      <tr>
-        <td align="center">EAP-AKA authentication</td><td align="center">secrecy(snn)</td><td align="center">1.50</td><td>1388</td>
+        <td align="center">EAP-AKA authentication</td><td align="center">secrecy(snn)</td><td align="center">1.50</td><td align="center">1388</td>
     </tr>
 </table>
  
