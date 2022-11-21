@@ -94,18 +94,18 @@ To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  
 
 Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
 
-1. execute the following command to use StrandSpace2Murphi to compile the A&B specification.
+1. Execute the following command to use StrandSpace2Murphi to compile Strand Space specification.
     - $ corebuild getModelString.byte -use-menhir 
 
-2. StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
+2. StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the security protocol into Murphi code.
     - $ ./getModelString.byte ./protocol/NSPK.txt
 
-3. protocol is compiled into Murphi code, the output file is located in `/source-code/outputs/result.m`.
+3. The generated file is located in `/source-code/outputs/result.m` after the protocol is compiled into Murphi code.
     - $ cd outputs 
     - $ `cmurphi-path`/cmurphi5.4.9.1/src/mu result.m
     - $ g++ -o result.o result.cpp -I `cmurphi-path`/cmurphi5.4.9.1/include/ -ggdb
 
-4. run verification:
+4. Execute the verification of the generated murphi script:
     - $ ./result.o >out1 -ndl -tv
 
 Result: `Invariant "weakB" failed`.
