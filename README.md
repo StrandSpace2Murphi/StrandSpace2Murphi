@@ -26,10 +26,10 @@ Theory protocol for paper<br>
 
 <table>
     <tr>
-        <th>班级</th><th>课程</th><th>平均分</th>
+        <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(kb.)</th>
     </tr>
     <tr>
-        <td rowspan="3">1班</td><td>语文</td><td>95</td>
+        <td rowspan="2">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td>56</td>
     </tr>
     <tr>
         <td>数学</td><td>96</td>
