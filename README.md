@@ -85,7 +85,6 @@ Install StrandSpace2Murphi Environment<br>
 
 StrandSpace2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml libraries to run, which contains:<br>
 - Menhir
-- Murphi 
 - Core
 
 
@@ -95,15 +94,15 @@ To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  
 
 Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
 
-First, execute the following command to use StrandSpace2Murphi to compile the A&B specification.
+1. execute the following command to use StrandSpace2Murphi to compile the A&B specification.
 
 $ corebuild getModelString.byte -use-menhir 
 
-Then, StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
+2. StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
 
 $ ./getModelString.byte ./protocol/NSPK.txt
 
-Next, the protocol is compiled into Murphi code, the output file is located in `/source-code/outputs/result.m`.
+3. protocol is compiled into Murphi code, the output file is located in `/source-code/outputs/result.m`.
 
 $ cd outputs 
 
@@ -113,7 +112,7 @@ $ g++ -o result.o result.cpp -I `cmurphi-path`/cmurphi5.4.9.1/include/ -ggdb
 
 $ ./result.o >out1 -ndl -tv
 
-Over verification:
+4. run verification:
 
 Result: `Invariant "weakB" failed`.
 
