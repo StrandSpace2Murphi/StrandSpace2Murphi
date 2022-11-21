@@ -2,11 +2,16 @@ StrandSpace2Murphi
 ====
 StrandSpace2Murphi is an automatic translator to bridge the gap between high-level Strand Space specifications and low-level Murphi model checker, which can help verify the security protocol described in the Strand Space specifications.<br>
 
+Difficulty<br>
+---
+- There are three agents in Otway-Rees including Alice, Bob and Server. Besides, We implemented a mechanism for forwarding secrecy with the help of `tmp` message. When agent receives oneA message that cannot be decrypted from its own knowledge, it forwards this message tagged as `tmp` to another agent.
+- Diffie Hellman is one of the earliest practical examples of public key exchange implemented within the field of cryptography which involes sophicated mathematics theories, e.g., modular exponentiation. The intruder supports the man-in-the-middle attack, which plays the role of sending the forged message to Alice and Bob respectively. Thus, Alice and Bob  thought  he was communicating with the intended agents.
+- 5G EAP-TLS authentication is a practical protocol to ensure the communication security. There are four participating entities in this protocol, UE, SEAF, AUSF and SUPI. It's hard to explore the whole state space because of numerous message exchanged. Besides, EAP-TLS uses a negotiated key  as the encrypted key which is a tetrad hash message.
 
 Theory protocol for paper<br>
 ---
 *A Formally Verified Scheme for SecurityProtocols with the Operational Semantics ofStrand Space*<br>
->The main security protocols proved are:<br>
+>The main security protocols verified:<br>
 <table>
     <tr>
         <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(byte.)</th>
@@ -71,12 +76,6 @@ Transition Scheme
 >>|Mod(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k)) |  Mod(m1,m2); SpyK(Mod(m1,m2)) := True|
 >>|Exp(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Exp(m,k)) |  Mod(m1,m2); SpyK(Exp(m1,m2)) := True|
 
-
-Difficulty<br>
----
-- There are three agents in Otway-Rees including Alice, Bob and Server. Besides, We implemented a mechanism for forwarding secrecy with the help of `tmp` message. When agent receives oneA message that cannot be decrypted from its own knowledge, it forwards this message tagged as `tmp` to another agent.
-- Diffie Hellman is one of the earliest practical examples of public key exchange implemented within the field of cryptography which involes sophicated mathematics theories, e.g., modular exponentiation. The intruder supports the man-in-the-middle attack, which plays the role of sending the forged message to Alice and Bob respectively. Thus, Alice and Bob  thought  he was communicating with the intended agents.
-- 5G EAP-TLS authentication is a practical protocol to ensure the communication security. There are four participating entities in this protocol, UE, SEAF, AUSF and SUPI. It's hard to explore the whole state space because of numerous message exchanged. Besides, EAP-TLS uses a negotiated key  as the encrypted key which is a tetrad hash message.
 
 Installation<br>
 ---
