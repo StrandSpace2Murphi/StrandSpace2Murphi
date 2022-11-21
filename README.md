@@ -1,6 +1,6 @@
 StrandSpace2Murphi
 ====
-StrandSpace2Murphi is an automatic translator to bridge the gap between high-level StrandSpace specifications and low-level Murphi model checker, which can help verify the security protocol described in the A&B specifications.<br>
+StrandSpace2Murphi is an automatic translator to bridge the gap between high-level StrandSpace specifications and low-level Murphi model checker, which can help verify the security protocol described in the Strand Space specifications.<br>
 
 
 Theory protocol for paper<br>
