@@ -10,7 +10,7 @@ Theory protocol for paper<br>
 >>|Protocols | Unsatisfied  | Time (sec.) | Memory|
 >>|:---:|:---:|:---:|:---:|
 >>|Needham-Schroder public key| secrecy(Nb)|0.10|56|
->>|Needham-Schroder public key|weakB|0.15|56|
+>>||weakB|0.15|56|
 >>|Lowe's fixed Needham-Schroder public key| no error|0.10|56|
 >>|Diffie-Hellman key exchange|secrecy(Na)|0.10|64|
 >>|Otway-Rees |no error|2.13|177| 
