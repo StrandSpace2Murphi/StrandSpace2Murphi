@@ -35,7 +35,7 @@ Theory protocol for paper<br>
         <td>weakB</td><td>0.15</td><td>56</td>
     </tr>
     <tr>
-        <td>英语</td><td>92</td>
+        <td>Lowe's fixed Needham-Schroder public key</td><td>no errors</td><td>0.10</td><td>64</td>
     </tr>
 </table>
  
