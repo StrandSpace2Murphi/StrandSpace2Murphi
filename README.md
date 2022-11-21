@@ -24,6 +24,22 @@ Theory protocol for paper<br>
 >>|EAP-TLS authentication|weakC|51.55|1700| 
 >>|EAP-AKA authentication|secrecy(snn)|1.50|1700| 
 
+<table>
+    <tr>
+        <th>班级</th><th>课程</th><th>平均分</th>
+    </tr>
+    <tr>
+        <td rowspan="3">1班</td><td>语文</td><td>95</td>
+    </tr>
+    <tr>
+        <td>数学</td><td>96</td>
+    </tr>
+    <tr>
+        <td>英语</td><td>92</td>
+    </tr>
+</table>
+ 
+
 Transition Scheme
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
