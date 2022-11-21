@@ -14,46 +14,46 @@ Theory protocol for paper<br>
 >The main security protocols verified:<br>
 <table>
     <tr>
-        <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(byte.)</th>
+        <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(byte)</th>
     </tr>
     <tr>
-        <td rowspan="2" align="center">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td rowspan="2">565</td>
+        <td rowspan="2" align="center">Needham-Schroder public key</td><td align="center">secrecy(Nb)</td><td align="center">0.10</td><td rowspan="2" align="center">565</td>
     </tr>
     <tr>
-        <td>weakB</td><td>0.15</td>
+        <td align="center">weakB</td><td align="center">0.15</td>
     </tr>
     <tr>
-        <td>Lowe's fixed Needham-Schroder public key</td><td>no errors</td><td>0.10</td><td>584</td>
+        <td align="center">Lowe's fixed Needham-Schroder public key</td><td align="center">no errors</td><td align="center">0.10</td><td align="center">584</td>
     </tr>
     <tr>
-        <td>Diffie-Hellman key exchange</td><td>secrecy(Na)</td><td>0.10</td><td>790</td>
+        <td align="center">Diffie-Hellman key exchange</td><td align="center">secrecy(Na)</td><td align="center">0.10</td><td align="center">790</td>
     </tr>
      <tr>
-        <td rowspan="3">CCITT X.509(1)</td><td>secrecy(Ya)</td><td>0.21</td><td rowspan="3">660</td>
+        <td rowspan="3" align="center">CCITT X.509(1)</td><td align="center">secrecy(Ya)</td><td align="center">0.21</td><td rowspan="3" align="center">660</td>
     </tr>
     <tr>
-        <td>weakB</td><td>0.84</td>
+        <td align="center">weakB</td><td align="center">0.84</td>
     </tr>
     <tr>
-        <td>weakA</td><td>0.84</td>
+        <td align="center">weakA</td><td align="center">0.84</td>
     </tr>
     <tr>
-        <td>CCITT X.509(1c)</td><td>no errors</td><td>0.45</td><td>698</td>
+        <td align="center">CCITT X.509(1c)</td><td align="center">no errors</td><td align="center">0.45</td><td align="center">698</td>
     </tr>
     <tr>
-        <td>Woo and Lam Pi</td><td>secrecy(Nb)</td><td>0.10</td><td>776</td>
+        <td align="center">Woo and Lam Pi</td><td align="center">secrecy(Nb)</td><td align="center">0.10</td><td align="center">776</td>
     </tr>
     <tr>
-        <td>Andrew Secure RP</td><td>secrecy(Kab)</td><td>2.77</td><td>768</td>
+        <td align="center">Andrew Secure RP</td><td align="center">secrecy(Kab)</td><td align="center">2.77</td><td align="center">768</td>
     </tr>
      <tr>
-        <td rowspan="2">EAP-TLS authentication</td><td>secrecy(prekey)</td><td>1.21</td><td rowspan="2">3018 </td>
+        <td rowspan="2" align="center">EAP-TLS authentication</td><td align="center">secrecy(prekey)</td><td align="center">1.21</td><td rowspan="2" align="center">3018 </td>
     </tr>
     <tr>
-        <td>weakC</td><td>51.55</td>
+        <td align="center">weakC</td><td>51.55</td>
     </tr>
      <tr>
-        <td>EAP-AKA authentication</td><td>secrecy(snn)</td><td>1.50</td><td>1388</td>
+        <td align="center">EAP-AKA authentication</td><td align="center">secrecy(snn)</td><td align="center">1.50</td><td>1388</td>
     </tr>
 </table>
  
