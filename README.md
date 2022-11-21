@@ -62,7 +62,7 @@ Transition Scheme
       <td>Murphi Rule</td>
    </tr>
    <tr>
-      <td rowspan="2">Send(i, str, s, M, L)</td>
+      <td rowspan="3">Send(i, str, s, M, L)</td>
       <td>"rule ""send""</td>
    </tr>
    <tr>
