@@ -95,7 +95,7 @@ To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  
 Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
 
 1. execute the following command to use StrandSpace2Murphi to compile the A&B specification.
-$ corebuild getModelString.byte -use-menhir 
+   $ corebuild getModelString.byte -use-menhir 
 
 2. StrandSpace2Murphi will generate the `getModelString.byte` which can help compile the source protocol into Murphi code.
 $ ./getModelString.byte ./protocol/NSPK.txt
