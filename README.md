@@ -105,7 +105,7 @@ $ ./getModelString.byte ./protocol/NSPK.txt
 
 Next, the protocol is compiled into Murphi code, the output file is located in `/source-code/outputs/result.m`.
 
-$cd outputs 
+$ cd outputs 
 
 $ `cmurphi-path`/cmurphi5.4.9.1/src/mu result.m
 
