@@ -62,14 +62,14 @@ Transition Scheme
 >>|:---:|:---|:---|:---|
 >>|Send(i, str, s, M, L) | send | channel.empty | Send(M); i := i+1; L.add(M);|
 >>|Recv(i, str, s, M, L) | recv | !channel.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
->>|Emit(i, str, s, M, L) | emit | channel.empty & SpyKnow(M) |  Emit(M); L.add(M)|
->>|Flush(i, str, s, M, L)| flush | !channel.empty & !SpyKnow(M) |  Flush(M); L.remove(M); SpyKnown(M) := True;|
->>|Sep(i, str, s, M, L)|sep|  type(M) = Mpair(m1,m2) & SpyKnow(M) | Sep(M); SpyKnow(m1) := True; SpyKnow(m2) := True;|
->>|Cat(i, str, s, M, L)| cat | SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mpair(m1,m2)) |  Cat(m1,m2); SpyKnow(Mpair(m1,m2)) := True;|
->>|Dec(i, str, s, M, L)| dec|  SpyKnow(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyKnow(m) := True;|
->>|Enc(i, str, s, M, L)|enc|  SpyKnow(m) & SpyKnow(k) & !SpyKnow(Crypt(m,k)) |  Enc(m,k); SpyKnow(Crypt(m,k)) := True;|
->>|Mod(i, str, s, M, L)|mod|  SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mod(m,k)) |  Mod(m1,m2); SpyKnow(Mod(m1,m2)) := True;|
->>|Exp(i, str, s, M, L)|exp|  SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Exp(m,k)) |  Mod(m1,m2); SpyKnow(Exp(m1,m2)) := True;|
+>>|Emit(i, str, s, M, L) | emit | channel.empty & SpyK(M) |  Emit(M); L.add(M)|
+>>|Flush(i, str, s, M, L)| flush | !channel.empty & !SpyK(M) |  Flush(M); L.remove(M); SpyK(M) := True;|
+>>|Sep(i, str, s, M, L)|sep|  type(M) = Mpair(m1,m2) & SpyK(M) | Sep(M); SpyKnow(m1) := True; SpyK(m2) := True;|
+>>|Cat(i, str, s, M, L)| cat | SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2)) |  Cat(m1,m2); SpyK(Mpair(m1,m2)) := True;|
+>>|Dec(i, str, s, M, L)| dec|  SpyK(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyK(m) := True;|
+>>|Enc(i, str, s, M, L)|enc|  SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k)) |  Enc(m,k); SpyK(Crypt(m,k)) := True;|
+>>|Mod(i, str, s, M, L)|mod|  SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k)) |  Mod(m1,m2); SpyK(Mod(m1,m2)) := True;|
+>>|Exp(i, str, s, M, L)|exp|  SpyK(m1) & SpyK(m2) & !SpyK(Exp(m,k)) |  Mod(m1,m2); SpyK(Exp(m1,m2)) := True;|
 
 
 Difficulty<br>
