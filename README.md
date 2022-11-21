@@ -59,7 +59,7 @@ Transition Scheme
 
 
 >>|Strand Rules | Murphi Guard | Murphi Action|
->>|:---:|:--- | :---|
+>>|:---:|:---: | :---:|
 >>|Send(i,str,s,M,L)  | c.empty | Send(M); i := i+1; L.add(M);|
 >>|Recv(i,str,s,M,L) | !c.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
 >>|Emit(i,str,s,M,L)  | c.empty & SpyK(M) |  Emit(M); L.add(M)|
