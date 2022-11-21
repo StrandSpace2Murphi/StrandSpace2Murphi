@@ -60,16 +60,16 @@ Transition Scheme
 
 >>|Strand Rules | Murphi Guard | Murphi Action|
 >>|:---:|:--- | :---|
->>|Send(i, str, s, M, L)  | c.empty | Send(M); i := i+1; L.add(M);|
->>|Recv(i, str, s, M, L) | !c.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
->>|Emit(i, str, s, M, L)  | c.empty & SpyK(M) |  Emit(M); L.add(M)|
->>|Flush(i, str, s, M, L) | !c.empty & !SpyK(M) |  Flush(M); L.remove(M); SpyK(M) := True;|
->>|Sep(i, str, s, M, L)|  type(M) = Mpair(m1,m2) & SpyK(M) | Sep(M); SpyK(m1) := True; SpyK(m2) := True;|
->>|Cat(i, str, s, M, L) | SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2)) |  Cat(m1,m2); SpyK(Mpair(m1,m2)) := True;|
->>|Dec(i, str, s, M, L)|  SpyK(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyK(m) := True;|
->>|Enc(i, str, s, M, L)|  SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k)) |  Enc(m,k); SpyK(Crypt(m,k)) := True;|
->>|Mod(i, str, s, M, L)|  SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k)) |  Mod(m1,m2); SpyK(Mod(m1,m2)) := True;|
->>|Exp(i, str, s, M, L)|  SpyK(m1) & SpyK(m2) & !SpyK(Exp(m,k)) |  Mod(m1,m2); SpyK(Exp(m1,m2)) := True;|
+>>|Send(i,str,s,M,L)  | c.empty | Send(M); i := i+1; L.add(M);|
+>>|Recv(i,str,s,M,L) | !c.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
+>>|Emit(i,str,s,M,L)  | c.empty & SpyK(M) |  Emit(M); L.add(M)|
+>>|Flush(i,str,s,M,L) | !c.empty & !SpyK(M) |  Flush(M); L.remove(M); SpyK(M) := True;|
+>>|Sep(i,str,s,M,L)|  type(M) = Mpair(m1,m2) & SpyK(M) | Sep(M); SpyK(m1) := True; SpyK(m2) := True;|
+>>|Cat(i,str,s,M,L) | SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2)) |  Cat(m1,m2); SpyK(Mpair(m1,m2)) := True;|
+>>|Dec(i,str,s,M,L)|  SpyK(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyK(m) := True;|
+>>|Enc(i,str,s,M,L)|  SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k)) |  Enc(m,k); SpyK(Crypt(m,k)) := True;|
+>>|Mod(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k)) |  Mod(m1,m2); SpyK(Mod(m1,m2)) := True;|
+>>|Exp(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Exp(m,k)) |  Mod(m1,m2); SpyK(Exp(m1,m2)) := True;|
 
 
 Difficulty<br>
