@@ -18,37 +18,37 @@ Theory protocol for paper<br>
         <td>weakB</td><td>0.15</td>
     </tr>
     <tr>
-        <td>Lowe's fixed Needham-Schroder public key</td><td>no errors</td><td>0.10</td><td>56</td>
+        <td>Lowe's fixed Needham-Schroder public key</td><td>no errors</td><td>0.10</td><td>584</td>
     </tr>
     <tr>
-        <td>Diffie-Hellman key exchange</td><td>secrecy(Na)</td><td>0.10</td><td>64</td>
+        <td>Diffie-Hellman key exchange</td><td>secrecy(Na)</td><td>0.10</td><td>790</td>
     </tr>
      <tr>
-        <td rowspan="3">CCITT X.509(1)</td><td>secrecy(Ya)</td><td>0.21</td><td>53</td>
+        <td rowspan="3">CCITT X.509(1)</td><td>secrecy(Ya)</td><td>0.21</td><td rowspan="3">660</td>
     </tr>
     <tr>
-        <td>weakB</td><td>0.84</td><td>53</td>
+        <td>weakB</td><td>0.84</td>
     </tr>
     <tr>
-        <td>weakA</td><td>0.84</td><td>53</td>
+        <td>weakA</td><td>0.84</td>
     </tr>
     <tr>
-        <td>CCITT X.509(1c)</td><td>no errors</td><td>0.45</td><td>53</td>
+        <td>CCITT X.509(1c)</td><td>no errors</td><td>0.45</td><td>698</td>
     </tr>
     <tr>
-        <td>Woo and Lam Pi</td><td>secrecy(Nb)</td><td>0.1</td><td>69</td>
+        <td>Woo and Lam Pi</td><td>secrecy(Nb)</td><td>0.1</td><td>776</td>
     </tr>
     <tr>
-        <td>Andrew Secure RP</td><td>secrecy(Kab)</td><td>2.77</td><td>54</td>
+        <td>Andrew Secure RP</td><td>secrecy(Kab)</td><td>2.77</td><td>768</td>
     </tr>
      <tr>
-        <td rowspan="2">EAP-TLS authentication</td><td>secrecy(prekey)</td><td>1.21</td><td>1700</td>
+        <td rowspan="2">EAP-TLS authentication</td><td>secrecy(prekey)</td><td>1.21</td><td rowspan="2">3,018 </td>
     </tr>
     <tr>
-        <td>weakC</td><td>51.55</td><td>1700</td>
+        <td>weakC</td><td>51.55</td>
     </tr>
      <tr>
-        <td>EAP-AKA authentication</td><td>secrecy(snn)</td><td>1.50</td><td>1700</td>
+        <td>EAP-AKA authentication</td><td>secrecy(snn)</td><td>1.50</td><td>1388</td>
     </tr>
 </table>
  
