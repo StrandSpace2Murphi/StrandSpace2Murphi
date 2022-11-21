@@ -56,39 +56,20 @@ Theory protocol for paper<br>
 Transition Scheme
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
-<table>
-   <tr>
-      <td>Rule</td>
-      <td>Murphi Rule</td>
-   </tr>
-   <tr>
-      <td rowspan="3">Send(i, str, s, M, L)</td>
-      <td>rule "send"</td>
-   </tr>
-   <tr>
-      <td>  channel.empty ==> </td>
-   </tr>
-   <tr>
-      <td>  Send(M); i := i+1; L.add(M);"</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-</table>
 
 
->>|Rule | Murphi Rule|
->>|:---:|:---|
->>|Send(i, str, s, M, L) | rule "send" channel.empty ==> Send(M); i := i+1; L.add(M);|
->>|Recv(i, str, s, M, L) | rule "recv" !channel.empty ==> Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
->>|Emit(i, str, s, M, L) | rule "emit" channel.empty & SpyKnow(M) ==> Emit(M); L.add(M)|
->>|Flush(i, str, s, M, L)| rule "flush" !channel.empty & !SpyKnow(M) ==> Flush(M); L.remove(M); SpyKnown(M) := True;|
->>|Sep(i, str, s, M, L)|rule "sep" type(M) = Mpair(m1,m2) & SpyKnow(M) ==> Sep(M); SpyKnow(m1) := True; SpyKnow(m2) := True;|
->>|Cat(i, str, s, M, L)| rule "cat" SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mpair(m1,m2)) ==> Cat(m1,m2); SpyKnow(Mpair(m1,m2)) := True;|
->>|Dec(i, str, s, M, L)| rule "dec" SpyKnow(M) & type(M) = Crypt(m,k) & SpyKnow(k) ==> Dec(M,k); SpyKnow(m) := True;|
->>|Enc(i, str, s, M, L)|rule "enc" SpyKnow(m) & SpyKnow(k) & !SpyKnow(Crypt(m,k)) ==> Enc(m,k); SpyKnow(Crypt(m,k)) := True;|
->>|Mod(i, str, s, M, L)|rule "mod" SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mod(m,k)) ==> Mod(m1,m2); SpyKnow(Mod(m1,m2)) := True;|
->>|Exp(i, str, s, M, L)|rule "exp" SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Exp(m,k)) ==> Mod(m1,m2); SpyKnow(Exp(m1,m2)) := True;|
+>>|Rule | Murphi Rule Name| Murphi Guard | Murphi Action|
+>>|:---:|:---|:---|:---|
+>>|Send(i, str, s, M, L) | rule "send" | channel.empty | Send(M); i := i+1; L.add(M);|
+>>|Recv(i, str, s, M, L) | rule "recv" | !channel.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg);|
+>>|Emit(i, str, s, M, L) | rule "emit" | channel.empty & SpyKnow(M) |  Emit(M); L.add(M)|
+>>|Flush(i, str, s, M, L)| rule "flush" | !channel.empty & !SpyKnow(M) |  Flush(M); L.remove(M); SpyKnown(M) := True;|
+>>|Sep(i, str, s, M, L)|rule "sep"|  type(M) = Mpair(m1,m2) & SpyKnow(M) | Sep(M); SpyKnow(m1) := True; SpyKnow(m2) := True;|
+>>|Cat(i, str, s, M, L)| rule "cat" | SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mpair(m1,m2)) |  Cat(m1,m2); SpyKnow(Mpair(m1,m2)) := True;|
+>>|Dec(i, str, s, M, L)| rule "dec"|  SpyKnow(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyKnow(m) := True;|
+>>|Enc(i, str, s, M, L)|rule "enc"|  SpyKnow(m) & SpyKnow(k) & !SpyKnow(Crypt(m,k)) |  Enc(m,k); SpyKnow(Crypt(m,k)) := True;|
+>>|Mod(i, str, s, M, L)|rule "mod"|  SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Mod(m,k)) |  Mod(m1,m2); SpyKnow(Mod(m1,m2)) := True;|
+>>|Exp(i, str, s, M, L)|rule "exp"|  SpyKnow(m1) & SpyKnow(m2) & !SpyKnow(Exp(m,k)) |  Mod(m1,m2); SpyKnow(Exp(m1,m2)) := True;|
 
 
 Difficulty<br>
