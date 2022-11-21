@@ -113,7 +113,11 @@ $ g++ -o result.o result.cpp -I `cmurphi-path`/cmurphi5.4.9.1/include/ -ggdb
 
 $ ./result.o >out1 -ndl -tv
 
-over verification, Result: `Invariant "weakB" failed.`. State Space Explored: `79 states, 110 rules fired in 0.10s.`
+Over verification:
+
+Result: `Invariant "weakB" failed.`. 
+
+State Space Explored: `79 states, 110 rules fired in 0.10s.`
 
 This message indicates StrandSpace2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
 
