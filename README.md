@@ -32,7 +32,7 @@ Theory protocol for paper<br>
         <td rowspan="2">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td>56</td>
     </tr>
     <tr>
-        <td>数学</td><td>96</td>
+        <td>weakB</td><td>0.15</td><td>56</td>
     </tr>
     <tr>
         <td>英语</td><td>92</td>
