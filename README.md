@@ -42,7 +42,7 @@ Theory protocol for paper<br>
         <td>Andrew Secure RP</td><td>secrecy(Kab)</td><td>2.77</td><td>768</td>
     </tr>
      <tr>
-        <td rowspan="2">EAP-TLS authentication</td><td>secrecy(prekey)</td><td>1.21</td><td rowspan="2">3,018 </td>
+        <td rowspan="2">EAP-TLS authentication</td><td>secrecy(prekey)</td><td>1.21</td><td rowspan="2">3018 </td>
     </tr>
     <tr>
         <td>weakC</td><td>51.55</td>
