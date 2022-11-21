@@ -86,6 +86,7 @@ Install StrandSpace2Murphi Environment<br>
 StrandSpace2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml libraries to run, which contains:<br>
 - Menhir
 - Core
+- Yacc
 
 
 Run with StrandSpace2Murphi<br>
