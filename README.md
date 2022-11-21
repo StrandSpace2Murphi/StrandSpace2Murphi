@@ -36,7 +36,7 @@ Theory protocol for paper<br>
         <td>CCITT X.509(1c)</td><td>no errors</td><td>0.45</td><td>698</td>
     </tr>
     <tr>
-        <td>Woo and Lam Pi</td><td>secrecy(Nb)</td><td>0.1</td><td>776</td>
+        <td>Woo and Lam Pi</td><td>secrecy(Nb)</td><td>0.10</td><td>776</td>
     </tr>
     <tr>
         <td>Andrew Secure RP</td><td>secrecy(Kab)</td><td>2.77</td><td>768</td>
