@@ -7,32 +7,15 @@ Theory protocol for paper<br>
 ---
 *A Formally Verified Scheme for SecurityProtocols with the Operational Semantics ofStrand Space*<br>
 >The main security protocols proved are:<br>
->>|Protocols | Unsatisfied  | Time (sec.) | Memory|
->>|:---:|:---:|:---:|:---:|
->>|Needham-Schroder public key| secrecy(Nb)|0.10|56|
->>||weakB|0.15|56|
->>|Lowe's fixed Needham-Schroder public key| no error|0.10|56|
->>|Diffie-Hellman key exchange|secrecy(Na)|0.10|64|
->>|Otway-Rees |no error|2.13|177| 
->>|CCITT X.509(1)|secrecy(Ya)|0.21|53| 
->>|CCITT X.509(1)|weakB|0.84|53| 
->>|CCITT X.509(1)|weakA|0.84|53| 
->>|CCITT X.509(1c)|no error|0.45|53| 
->>|Woo and Lam Pi|secrecy(Nb)|0.10|69| 
->>|Andrew Secure RP|secrecy(Kab)|2.77|54| 
->>|EAP-TLS authentication|secrecy(prekey)|1.21|1700| 
->>|EAP-TLS authentication|weakC|51.55|1700| 
->>|EAP-AKA authentication|secrecy(snn)|1.50|1700| 
-
 <table>
     <tr>
-        <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(kb.)</th>
+        <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(byte.)</th>
     </tr>
     <tr>
-        <td rowspan="2">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td>56</td>
+        <td rowspan="2">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td rowspan="2">565</td>
     </tr>
     <tr>
-        <td>weakB</td><td>0.15</td><td>56</td>
+        <td>weakB</td><td>0.15</td>
     </tr>
     <tr>
         <td>Lowe's fixed Needham-Schroder public key</td><td>no errors</td><td>0.10</td><td>56</td>
