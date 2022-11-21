@@ -92,7 +92,7 @@ Run with StrandSpace2Murphi<br>
 ---
 To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  Ocaml 4.04.0, Murphi 5.4.9.1, Core, and Menhir in your environment.<br>
 
-## Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
+### Running the following command in terminal to verify the protocol models. In this example, we verify the Needham-Schoreder public key protocol model `NSPK.txt`.
 
 1. Execute the following command to use StrandSpace2Murphi to compile Strand Space specification.
     - $ corebuild getModelString.byte -use-menhir 
@@ -108,9 +108,9 @@ To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  
 4. Execute the verification of the generated murphi script:
     - $ ./result.o >out1 -ndl -tv
 
-## Result: `Invariant "weakB" failed`.
+### Result: `Invariant "weakB" failed`.
 
-## State Space Explored: `79 states, 110 rules fired in 0.10s`.
+### State Space Explored: `79 states, 110 rules fired in 0.10s`.
 
 This hint indicates that StrandSpace2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
 
