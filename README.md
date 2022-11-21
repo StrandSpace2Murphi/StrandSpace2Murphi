@@ -63,15 +63,13 @@ Transition Scheme
    </tr>
    <tr>
       <td>Send(i, str, s, M, L)</td>
-      <td>rule "send"</td>
+      <td>"rule ""send""</td>
    </tr>
    <tr>
-      <td></td>
-      <td> channel.empty ==> </td>
+      <td>channel.empty ==> </td>
    </tr>
    <tr>
-      <td></td>
-      <td>Send(M); i := i+1; L.add(M);</td>
+      <td>Send(M); i := i+1; L.add(M);"</td>
    </tr>
    <tr>
       <td></td>
