@@ -89,7 +89,7 @@ StrandSpace2Murphi uses Ocaml 4.04.0, Murphi 5.4.9.1 and requires several ocaml 
 - Core
 
 
-Usage
+Run with StrandSpace2Murphi<br>
 ---
 To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  Ocaml 4.04.0, Murphi 5.4.9.1, Core, and Menhir in your environment.<br>
 
