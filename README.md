@@ -17,7 +17,7 @@ Theory protocol for paper<br>
         <th>Protocols</th><th>Unsatisfied</th><th>Time(sec.)</th><th>Memory(byte.)</th>
     </tr>
     <tr>
-        <td rowspan="2">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td rowspan="2">565</td>
+        <td rowspan="2" align="center">Needham-Schroder public key</td><td>secrecy(Nb)</td><td>0.10</td><td rowspan="2">565</td>
     </tr>
     <tr>
         <td>weakB</td><td>0.15</td>
