@@ -89,7 +89,7 @@ Transition Scheme
     <tr>
         <td align="center">Sep(i,str,s,M,L)</td>
         <td align="center">M = Mpair(m1,m2) & SpyK(M)</td>
-        <td align="center">Sep(M); SpyK(m1):=True; SpyK(m2):=True</td>
+        <td align="center">Sep(M); SpyK(m1):=True; SpyK(m2) := True</td>
     </tr>
     <tr>
         <td align="center">Cat(i,str,s,M,L)</td>
