@@ -58,23 +58,66 @@ Theory protocol for paper<br>
 </table>
  
 
+
 Transition Scheme
 ---
 *The Transformation from the Operational Semantic to Transition Rules*<br>
 
-
->>|Strand Rules | Murphi Guard | Murphi Action|
->>|:---:|:---: | :---:|
->>|Send(i,str,s,M,L)  | c.empty | Send(M); i := i+1; L.add(M)|
->>|Recv(i,str,s,M,L) | !c.empty |  Recv(M); i := i+1; L.remove(M); msg := destruct(M); update(msg)|
->>|Emit(i,str,s,M,L)  | c.empty & SpyK(M) |  Emit(M); L.add(M)|
->>|Flush(i,str,s,M,L) | !c.empty & !SpyK(M) |  Flush(M); L.remove(M); SpyK(M) := True|
->>|Sep(i,str,s,M,L)|  M = Mpair(m1,m2) & SpyK(M) | Sep(M); SpyK(m1) := True; SpyK(m2) := True|
->>|Cat(i,str,s,M,L) | SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2)) |  Cat(m1,m2); SpyK(Mpair(m1,m2)) := True|
->>|Dec(i,str,s,M,L)|  SpyK(M) & type(M) = Crypt(m,k) & SpyKnow(k) |  Dec(M,k); SpyK(m) := True|
->>|Enc(i,str,s,M,L)|  SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k)) |  Enc(m,k); SpyK(Crypt(m,k)) := True|
->>|Mod(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k)) |  Mod(m1,m2); SpyK(Mod(m1,m2)) := True|
->>|Exp(i,str,s,M,L)|  SpyK(m1) & SpyK(m2) & !SpyK(Exp(m,k)) |  Mod(m1,m2); SpyK(Exp(m1,m2)) := True|
+ <table>
+    <tr>
+        <th>Strand Rule</th><th>Murphi Guard</th><th>Murphi Action</th>
+    </tr>
+    <tr>
+        <td align="center">Send(i,str,M,L)</td>
+        <td align="center">c.empty</td>
+        <td align="center">Send(M);i:=i+1;L.add(M)</td>
+    </tr>
+    <tr>
+        <td  align="center">Recv(i,str,M,L)</td>
+        <td  align="center">!c.empty</td>
+        <td  align="center">Recv(M);i:=i+1;L.remove(M);<br>msg:=destruct;update(msg)</td>
+    </tr>
+    <tr>
+        <td align="center">Emit(i,str,M,L)</td>
+        <td align="center">c.empty & SpyK(M)</td>
+        <td align="center">Emit(M); L.add(M)</td>
+    </tr>
+    <tr>
+        <td align="center">Flush(i,str,M,L)</td>
+        <td align="center">!c.empty & !SpyK(M)</td><td align="center">Flush(M);L.remove(M);SpyK(M):=True</td>
+    </tr>
+    <tr>
+        <td align="center">Sep(i,str,s,M,L)</td>
+        <td align="center">M=Mpair(m1,m2) & SpyK(M)</td>
+        <td align="center">Sep(M);SpyK(m1):=True;SpyK(m2):=True</td>
+    </tr>
+    <tr>
+        <td align="center">Cat(i,str,s,M,L)</td>
+        <td align="center">SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2))</td>
+        <td align="center">Cat(m1,m2);SpyK(Mpair(m1,m2)):=True</td>
+    </tr>
+    <tr>
+        <td align="center">Dec(i,str,s,M,L)</td>
+        <td align="center">SpyK(M) & type(M)=Crypt(m,k) & SpyKnow(k)</td>
+        <td align="center">Dec(M,k); SpyK(m) := True</td>
+    </tr>
+    <tr>
+        <td align="center">Enc(i,str,s,M,L)</td>
+        <td align="center">SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k))</td>
+        <td align="center">Enc(m,k); SpyK(Crypt(m,k)):=True</td>
+    </tr>
+    <tr>
+        <td align="center">Mod(i,str,s,M,L)</td>
+        <td align="center">SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k))</td>
+        <td align="center">Mod(m1,m2); SpyK(Mod(m1,m2)) := True </td>
+    </tr>
+    <tr>
+        <td align="center">Exp(i,str,s,M,L)</td>
+        <td align="center">!c.empty & !SpyK(M)</td>
+        <td align="center">Mod(m1,m2); SpyK(Exp(m1,m2)) := True</td>
+    </tr>
+    
+</table>
 
 
 Installation<br>
