@@ -69,53 +69,53 @@ Transition Scheme
     </tr>
     <tr>
         <td align="center">Send(i,str,M,L)</td>
-        <td align="center">c.empty</td>
-        <td align="center">Send(M); i := i + 1; L.add(M)</td>
+        <td>c.empty</td>
+        <td>Send(M); i := i + 1; L.add(M)</td>
     </tr>
     <tr>
         <td  align="center">Recv(i,str,M,L)</td>
-        <td  align="center">!c.empty</td>
-        <td  align="center">Recv(M); i := i + 1;L.remove(M);<br>msg := destruct; update(msg)</td>
+        <td>!c.empty</td>
+        <td>Recv(M); i := i + 1;L.remove(M);<br>msg := destruct; update(msg)</td>
     </tr>
     <tr>
         <td align="center">Emit(i,str,M,L)</td>
-        <td align="center">c.empty & SpyK(M)</td>
-        <td align="center">Emit(M); L.add(M)</td>
+        <td>c.empty & SpyK(M)</td>
+        <td>Emit(M); L.add(M)</td>
     </tr>
     <tr>
         <td align="center">Flush(i,str,M,L)</td>
-        <td align="center">!c.empty & !SpyK(M)</td>
-        <td align="center">Flush(M); L.remove(M); SpyK(M) := True</td>
+        <td>!c.empty & !SpyK(M)</td>
+        <td>Flush(M); L.remove(M); SpyK(M) := True</td>
     </tr>
     <tr>
         <td align="center">Sep(i,str,s,M,L)</td>
-        <td align="center">M = Mpair(m1,m2) & SpyK(M)</td>
-        <td align="center">Sep(M); SpyK(m1) := True; SpyK(m2) := True</td>
+        <td>M = Mpair(m1,m2) & SpyK(M)</td>
+        <td>Sep(M); SpyK(m1) := True; SpyK(m2) := True</td>
     </tr>
     <tr>
         <td align="center">Cat(i,str,s,M,L)</td>
-        <td align="center">SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2))</td>
-        <td align="center">Cat(m1,m2); SpyK(Mpair(m1,m2)) := True</td>
+        <td>SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2))</td>
+        <td>Cat(m1,m2); SpyK(Mpair(m1,m2)) := True</td>
     </tr>
     <tr>
         <td align="center">Dec(i,str,s,M,L)</td>
-        <td align="center">SpyK(M) & type(M)=Crypt(m,k) & SpyKnow(k)</td>
-        <td align="center">Dec(M,k); SpyK(m) := True</td>
+        <td>SpyK(M) & type(M)=Crypt(m,k) & SpyKnow(k)</td>
+        <td>Dec(M,k); SpyK(m) := True</td>
     </tr>
     <tr>
         <td align="center">Enc(i,str,s,M,L)</td>
-        <td align="center">SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k))</td>
-        <td align="center">Enc(m,k); SpyK(Crypt(m,k)) := True</td>
+        <td>SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k))</td>
+        <td>Enc(m,k); SpyK(Crypt(m,k)) := True</td>
     </tr>
     <tr>
         <td align="center">Mod(i,str,s,M,L)</td>
-        <td align="center">SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k))</td>
-        <td align="center">Mod(m1,m2); SpyK(Mod(m1,m2)) := True </td>
+        <td>SpyK(m1) & SpyK(m2) & !SpyK(Mod(m,k))</td>
+        <td>Mod(m1,m2); SpyK(Mod(m1,m2)) := True </td>
     </tr>
     <tr>
         <td align="center">Exp(i,str,s,M,L)</td>
-        <td align="center">!c.empty & !SpyK(M)</td>
-        <td align="center">Mod(m1,m2); SpyK(Exp(m1,m2)) := True</td>
+        <td>!c.empty & !SpyK(M)</td>
+        <td>Mod(m1,m2); SpyK(Exp(m1,m2)) := True</td>
     </tr>
     
 </table>
