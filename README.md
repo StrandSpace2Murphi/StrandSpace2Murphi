@@ -10,7 +10,7 @@ Difficulty<br>
 
 Theory protocol for paper<br>
 ---
-*A Formally Verified Scheme for SecurityProtocols with the Operational Semantics ofStrand Space*<br>
+*A Formally Verified Scheme for SecurityProtocols with the Operational Semantics of Strand Space*<br>
 >The main security protocols verified:<br>
 <table>
     <tr>
