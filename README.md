@@ -70,12 +70,12 @@ Transition Scheme
     <tr>
         <td align="center">Send(i,str,M,L)</td>
         <td align="center">c.empty</td>
-        <td align="center">Send(M);i:=i+1;L.add(M)</td>
+        <td align="center">Send(M); i := i + 1; L.add(M)</td>
     </tr>
     <tr>
         <td  align="center">Recv(i,str,M,L)</td>
         <td  align="center">!c.empty</td>
-        <td  align="center">Recv(M);i:=i+1;L.remove(M);<br>msg:=destruct;update(msg)</td>
+        <td  align="center">Recv(M); i := i + 1;L.remove(M);<br>msg := destruct; update(msg)</td>
     </tr>
     <tr>
         <td align="center">Emit(i,str,M,L)</td>
@@ -84,17 +84,17 @@ Transition Scheme
     </tr>
     <tr>
         <td align="center">Flush(i,str,M,L)</td>
-        <td align="center">!c.empty & !SpyK(M)</td><td align="center">Flush(M);L.remove(M);SpyK(M):=True</td>
+        <td align="center">!c.empty & !SpyK(M)</td><td align="center">Flush(M); L.remove(M); SpyK(M) := True</td>
     </tr>
     <tr>
         <td align="center">Sep(i,str,s,M,L)</td>
-        <td align="center">M=Mpair(m1,m2) & SpyK(M)</td>
-        <td align="center">Sep(M);SpyK(m1):=True;SpyK(m2):=True</td>
+        <td align="center">M = Mpair(m1,m2) & SpyK(M)</td>
+        <td align="center">Sep(M); SpyK(m1):=True; SpyK(m2):=True</td>
     </tr>
     <tr>
         <td align="center">Cat(i,str,s,M,L)</td>
         <td align="center">SpyK(m1) & SpyK(m2) & !SpyK(Mpair(m1,m2))</td>
-        <td align="center">Cat(m1,m2);SpyK(Mpair(m1,m2)):=True</td>
+        <td align="center">Cat(m1,m2); SpyK(Mpair(m1,m2)) := True</td>
     </tr>
     <tr>
         <td align="center">Dec(i,str,s,M,L)</td>
@@ -104,7 +104,7 @@ Transition Scheme
     <tr>
         <td align="center">Enc(i,str,s,M,L)</td>
         <td align="center">SpyK(m) & SpyK(k) & !SpyK(Crypt(m,k))</td>
-        <td align="center">Enc(m,k); SpyK(Crypt(m,k)):=True</td>
+        <td align="center">Enc(m,k); SpyK(Crypt(m,k)) := True</td>
     </tr>
     <tr>
         <td align="center">Mod(i,str,s,M,L)</td>
