@@ -61,7 +61,7 @@ Theory protocol for paper<br>
 
 Transition Scheme
 ---
-*The Transformation from the Operational Semantic to Transition Rules*<br>
+>The Transformation from the Operational Semantic to Transition Rules<br>
 
  <table>
     <tr>
