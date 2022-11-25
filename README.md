@@ -162,7 +162,8 @@ This hint indicates that StrandSpace2Murphi uses 79 states and 110 rules to find
 Case Study<br>
 ---
 >EAP-TLS Protocol<br>
-![ ]([http://static.runoob.com/images/runoob-logo.png](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png))
+
+![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
 
 
 
