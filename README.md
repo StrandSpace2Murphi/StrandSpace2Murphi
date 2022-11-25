@@ -161,7 +161,9 @@ This hint indicates that StrandSpace2Murphi uses 79 states and 110 rules to find
 
 Case Study<br>
 ---
->EAP-TLS Protocol<br>
+>Extensible Authentication Protocol<br>
+
+Transport Layer Security (EAP-TLS) is an IETF open standard that’s defined in RFC 5216. More colloquially, EAP-TLS is the authentication protocol most commonly deployed on WPA2-Enterprise networks to enable the use of X.509 digital certificates for authentication.
 
 ![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
 
