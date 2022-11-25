@@ -159,3 +159,5 @@ To use StrandSpace2Murphi, you need to comfirm the your computer equipped with  
 
 This hint indicates that StrandSpace2Murphi uses 79 states and 110 rules to find the counterexample path of invariant `weakB`.
 
+Case Study<br>
+---
