@@ -169,7 +169,9 @@ Transport Layer Security (EAP-TLS) is an IETF open standard that’s defined in 
 
 >Counter Example of Privacy<br>
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/privacy.png" width="50%">
+
 >Counter Example of Weak-agreement<br>
+
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/weak-agreement.png" width="50%">
 
 
