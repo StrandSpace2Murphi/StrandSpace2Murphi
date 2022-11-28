@@ -167,6 +167,11 @@ Transport Layer Security (EAP-TLS) is an IETF open standard that’s defined in 
 
 ![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
 
+- UE: Uer Equipment
+- SEAF: Securiity Anchor Function 
+- AUSF: Authentication Server Function
+- Unified Data Management
+
 >Counter Example of Privacy<br>
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/privacy.png" width="50%">
 
