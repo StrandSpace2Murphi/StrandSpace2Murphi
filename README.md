@@ -164,13 +164,13 @@ Case Study<br>
 >Extensible Authentication Protocol<br>
 
 Transport Layer Security (EAP-TLS) is an IETF open standard that’s defined in RFC 5216. More colloquially, EAP-TLS is the authentication protocol most commonly deployed on WPA2-Enterprise networks to enable the use of X.509 digital certificates for authentication.
-
-![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
-
 - UE: Uer Equipment
 - SEAF: Securiity Anchor Function 
 - AUSF: Authentication Server Function
 - Unified Data Management
+-
+![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
+
 
 >Counter Example of Privacy<br>
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/privacy.png" width="50%">
