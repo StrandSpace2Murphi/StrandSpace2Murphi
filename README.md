@@ -168,15 +168,16 @@ Transport Layer Security (EAP-TLS) is an IETF open standard that’s defined in 
 - SEAF: Securiity Anchor Function 
 - AUSF: Authentication Server Function
 - Unified Data Management
--
+
 ![ ](https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/EAP-TLS.png)
 
 
 >Counter Example of Privacy<br>
+- Both the home network (AUSF) and the subscriber (UE) should agree on the identity of each other after successful termination.
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/privacy.png" width="50%">
 
 >Counter Example of Weak-agreement<br>
-
+- Both the home network (AUSF) and the subscriber (UE) should agree on the pre-master key after successful termination.
 <img decoding="async" src="https://github.com/StrandSpace2Murphi/StrandSpace2Murphi/blob/main/image/weak-agreement.png" width="50%">
 
 
